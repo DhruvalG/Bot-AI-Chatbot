@@ -268,5 +268,25 @@
       "id": 54,
       "question": "Hi, what is the temperature",
       "response": "I'm sorry for any confusion, but I can't provide real-time information such as current temperature or weather updates. You can check the temperature by using a weather website or app, or by asking a smart assistant like Siri, Google Assistant, or Alexa."
+    },
+    {
+      "id": 55,
+      "question": "hello",
+      "response": "Hi there! How can I assist you today?"
+    },
+    {
+      "id": 56,
+      "question": "hi",
+      "response": "Hi there! How can I assist you today?"
+    },
+    {
+      "id": 57,
+      "question": "how are you?",
+      "response": "I am fine, What about you?"
+    },
+    {
+      "id": 58,
+      "question": "i am also fine",
+      "response": "That's great to hear! if you have any questions or need assistance with anything, feel free to let me know. I'm here to help!"
     }
   ]

@@ -24,7 +24,7 @@ export default function Home() {
 
         const response = data.find(item => input.toLowerCase() == item.question.toLowerCase())
 
-        let answer = "As an AI Language Model, I don’t have the details"
+        let answer = "As an AI Language Model, I don’t have access to this details. Therefore, How can I assist you further?"
 
         if (response != undefined) {
             answer = response.response
