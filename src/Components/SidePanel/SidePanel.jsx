@@ -3,10 +3,10 @@ import { ThemeContext } from "../../Theme/ThemeContext"
 import { Typography, Box, Stack, Button, useMediaQuery } from '@mui/material'
 import icon from '../../Assets/newchat.png'
 import { Link } from 'react-router-dom'
-import AddCommentIcon from '@mui/icons-material/AddComment';
+import editIcon from '../../Assets/edit.png';
 import CloseIcon from '@mui/icons-material/Close';
 
-function SidePanel({ setChat, closeMenu }) {
+function SidePanel({ setChatText, closeMenu }) {
 
     let { mode, setMode } = useContext(ThemeContext)
     let isMobile = useMediaQuery('(max-width:800px)')
@@ -36,7 +36,7 @@ function SidePanel({ setChat, closeMenu }) {
             <Link to={'/'} style={{ textDecoration: 'none' }}>
                 <Stack
                     onClick={() => {
-                        setChat([])
+                        setChatText([])
                         closeMenu()
                     }}
                     sx={{
@@ -71,7 +71,13 @@ function SidePanel({ setChat, closeMenu }) {
                         </Typography>
                     </Stack>
 
-                    <AddCommentIcon sx={{ color: 'text.primary' }} />
+                    <Box
+                            component={'img'}
+                            src={editIcon}
+                            height={32}
+                            width={32}
+                            flexShrink={0}
+                        />
 
                 </Stack>
             </Link>
